@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="ZZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3C-Em-wqF">
+                    <rect key="frame" x="16" y="16" width="343" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="15" id="aQD-Pr-Tfd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2O-XJ-1gl">
+                    <rect key="frame" x="367" y="16" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="750" constant="42" id="V36-kh-kNS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.38" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v3C-Em-wqF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="85H-NK-FyI"/>
+                <constraint firstItem="v3C-Em-wqF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="NEV-oX-tRR"/>
+                <constraint firstItem="S2O-XJ-1gl" firstAttribute="height" secondItem="v3C-Em-wqF" secondAttribute="height" id="Pc1-zC-1nE"/>
+                <constraint firstItem="S2O-XJ-1gl" firstAttribute="top" secondItem="v3C-Em-wqF" secondAttribute="top" id="T48-fY-xt1"/>
+                <constraint firstItem="S2O-XJ-1gl" firstAttribute="leading" secondItem="v3C-Em-wqF" secondAttribute="trailing" constant="8" id="m2e-g6-4Rv"/>
+                <constraint firstAttribute="trailing" secondItem="S2O-XJ-1gl" secondAttribute="trailing" constant="8" id="mTo-Mc-Yzp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="counterLabel" destination="S2O-XJ-1gl" id="tB0-0M-jan"/>
+                <outlet property="headerLabel" destination="v3C-Em-wqF" id="8hw-16-ru0"/>
+                <outlet property="labelTopSpace" destination="NEV-oX-tRR" id="5WC-rt-aZX"/>
+            </connections>
+        </view>
+    </objects>
+</document>

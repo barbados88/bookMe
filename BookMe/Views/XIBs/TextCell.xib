@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCell" id="AfN-6U-ISO" customClass="CommentCell" customModule="dynamic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AfN-6U-ISO" id="MIm-Gr-caG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-iO-tVm">
+                        <rect key="frame" x="10" y="2" width="350" height="41"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.8690336045" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-5p-f7I">
+                        <rect key="frame" x="0.0" y="3" width="375" height="0.0"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите комментарий…" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-Pe-Ghn">
+                        <rect key="frame" x="15" y="0.0" width="360" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="9HU-xt-Nyy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VQt-5p-f7I" secondAttribute="bottom" constant="40" id="9uu-0B-foj"/>
+                    <constraint firstItem="6ac-iO-tVm" firstAttribute="top" secondItem="MIm-Gr-caG" secondAttribute="top" constant="2" id="AR1-0p-aTZ"/>
+                    <constraint firstItem="OcD-Pe-Ghn" firstAttribute="top" secondItem="MIm-Gr-caG" secondAttribute="top" id="HSg-g1-24h"/>
+                    <constraint firstAttribute="bottom" secondItem="6ac-iO-tVm" secondAttribute="bottom" id="NoC-5E-Cv3"/>
+                    <constraint firstItem="VQt-5p-f7I" firstAttribute="leading" secondItem="MIm-Gr-caG" secondAttribute="leading" id="PBo-oQ-LdV"/>
+                    <constraint firstAttribute="trailing" secondItem="6ac-iO-tVm" secondAttribute="trailing" constant="15" id="Pwt-aG-rpd"/>
+                    <constraint firstAttribute="trailing" secondItem="OcD-Pe-Ghn" secondAttribute="trailing" id="R6Q-uQ-Fjz"/>
+                    <constraint firstItem="6ac-iO-tVm" firstAttribute="leading" secondItem="MIm-Gr-caG" secondAttribute="leading" constant="10" id="ZdU-Ii-4SE"/>
+                    <constraint firstItem="OcD-Pe-Ghn" firstAttribute="leading" secondItem="MIm-Gr-caG" secondAttribute="leading" constant="15" id="aiv-r1-NuI"/>
+                    <constraint firstItem="VQt-5p-f7I" firstAttribute="top" secondItem="MIm-Gr-caG" secondAttribute="top" constant="3" id="qQn-dI-YeF"/>
+                    <constraint firstAttribute="trailing" secondItem="VQt-5p-f7I" secondAttribute="trailing" id="x3G-RP-119"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeholderLabel" destination="OcD-Pe-Ghn" id="YC7-XT-z55"/>
+                <outlet property="textView" destination="6ac-iO-tVm" id="8p5-SM-mlk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

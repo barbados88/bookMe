@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d2Z-Zh-ypJ" customClass="FishView" customModule="BookMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-5s-SDb">
+                    <rect key="frame" x="0.0" y="150" width="375" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="21" id="7Fe-xN-YsW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PN-pN-Vfx">
+                    <rect key="frame" x="45" y="163" width="285" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="21" id="69t-q7-ZVF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5PN-pN-Vfx" firstAttribute="top" secondItem="ni5-5s-SDb" secondAttribute="bottom" constant="13" id="6bS-nU-NXH"/>
+                <constraint firstItem="ni5-5s-SDb" firstAttribute="leading" secondItem="d2Z-Zh-ypJ" secondAttribute="leading" id="c7m-ki-crf"/>
+                <constraint firstItem="5PN-pN-Vfx" firstAttribute="leading" secondItem="d2Z-Zh-ypJ" secondAttribute="leading" constant="45" id="eCS-Mc-STM"/>
+                <constraint firstItem="ni5-5s-SDb" firstAttribute="top" secondItem="d2Z-Zh-ypJ" secondAttribute="top" constant="150" id="jTR-DO-de1"/>
+                <constraint firstAttribute="trailing" secondItem="ni5-5s-SDb" secondAttribute="trailing" id="utc-Zd-Tem"/>
+                <constraint firstAttribute="trailing" secondItem="5PN-pN-Vfx" secondAttribute="trailing" constant="45" id="xna-oj-JwQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="5PN-pN-Vfx" id="EG2-Xj-h5B"/>
+                <outlet property="titleLabel" destination="ni5-5s-SDb" id="uI2-iU-756"/>
+            </connections>
+        </view>
+    </objects>
+</document>
